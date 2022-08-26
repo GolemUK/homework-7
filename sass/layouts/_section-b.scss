@@ -1,0 +1,45 @@
+.section-b {
+    padding-top: 94px;
+}
+
+.section-b-text {
+    display: flex;
+    gap: 30px;
+}
+
+.section-b-item {
+    width: 270px;
+    min-height: 101px;
+}
+
+.section-b-svg {
+    margin-bottom: 30px;
+    display: flex;
+    height: 120px;
+    justify-content: center;
+    align-items: center;
+    background-color: #F5F4FA;
+}
+
+.section-b-icon {
+    width: 70px;
+    height: 70px;
+    display: block;
+}
+
+.section-b-subtitle {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #212121;
+    margin-bottom: 10px;
+}
+
+.section-b-desc {
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: var(--main-color-text);
+}
