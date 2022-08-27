@@ -35,27 +35,25 @@
     position: absolute;
     right: 10px;
     top: 10px;
+        .close {
+        display: flex;
+        width: 30px;
+        height: 30px;
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        background-color: #FFFFFF;
+        cursor: pointer;
+            .modal-svg {
+            fill: #000000;
+                &:hover {
+                fill: var(--icon-color-svg);
+            }
+        }
+
+    }
     
-}
-
-.close {
-    display: flex;
-    width: 30px;
-    height: 30px;
-    border: 1px solid rgba(0, 0, 0, 0.1);
-    align-items: center;
-    justify-content: center;
-    border-radius: 50%;
-    background-color: #FFFFFF;
-    cursor: pointer;
-}
-
-.modal-svg {
-    fill: #000000;
-}
-
-.modal-svg:hover {
-    fill: var(--icon-color-svg);
 }
 
 .is-hidden {
@@ -66,10 +64,6 @@
 
 .no-scroll {
     overflow: hidden;
-}
-
-.modal-form {
-    
 }
 
 .modal-title {
@@ -104,13 +98,20 @@
     width: 448px;
     height: 40px;
     color: #2196F3;
-}
-
-.input-svg {
-    position: absolute;
-    left: 12px;
-    top: 50%;
-    transform: translateY(-50%);
+        .modal-input {
+        width: 100%;
+        height: 40px;
+        border: 1px solid rgba(33, 33, 33, 0.2);
+        border-radius: 4px;
+        margin-bottom: 10px;
+        padding-left: 42px;
+            .input-svg {
+            position: absolute;
+            left: 12px;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+    }
 }
 
 .modal-label-area {
@@ -125,25 +126,13 @@
     margin-top: 10px;
 }
 
-.modal-input {
-    width: 100%;
-    height: 40px;
-    border: 1px solid rgba(33, 33, 33, 0.2);
-    border-radius: 4px;
-    margin-bottom: 10px;
-    padding-left: 42px;
-    
-}
-
 .modal-input:focus + .input-svg {
     fill: currentColor;
-    
 }
 
 .modal-input:focus {
     border: 1px solid #2196F3;
 }
-
 
 .modal-area-com {
     height: 120px;
@@ -152,56 +141,58 @@
     border-radius: 4px;
     resize: none;
     padding: 12px 16px;
-}
-
-.modal-area-com:focus {
-    border: 1px solid #2196F3;
-}
-
-.modal-area-com::placeholder {
-    font-style: normal;
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 1.1;
-    letter-spacing: 0.01em;
-    color: rgba(117, 117, 117, 0.5);
+        &:focus {
+        border: 1px solid #2196F3;
+        }
+        &::placeholder {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 1.1;
+        letter-spacing: 0.01em;
+        color: rgba(117, 117, 117, 0.5);
+    }
 }
 
 .check-box {
     margin-top: 20px;
-}
+        .label-check {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 1.7;
+        letter-spacing: 0.03em;
+        color: #757575;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+            & span {
+            width: 16px;
+            height: 15px;
+            border: 1px solid #212121;
+            border-radius: 2.5px;
+            margin-right: 7px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition-duration: background-color 250ms;
+            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
-.input-check {
-
-}
-
-.label-check {
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.7;
-    letter-spacing: 0.03em;
-    color: #757575;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.label-check span {
-    width: 16px;
-    height: 15px;
-    border: 1px solid #212121;
-    border-radius: 2.5px;
-    margin-right: 7px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition-duration: background-color 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-
+        }
+    }
 }
 
 .check-svg {
     fill: #FFFFFF;
+        .contract-term {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 1.7;
+        letter-spacing: 0.03em;
+        text-decoration-line: underline;
+        color: var(--icon-color-svg);
+        margin-left: 4px;
+    }
 }
 
 .input-check:checked + .label-check span {
@@ -211,17 +202,6 @@
 
 .input-check:focus + .label-check span {
     border-color: var(--icon-color-svg);
-}
-
-.contract-term {
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.7;
-    letter-spacing: 0.03em;
-    text-decoration-line: underline;
-    color: var(--icon-color-svg);
-    margin-left: 4px;
 }
 
 .modal-btn {
