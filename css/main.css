@@ -649,7 +649,7 @@ img {
   padding-bottom: 94px;
   background-color: #F5F4FA;
 }
-.section-d .section-d-heading {
+.section-d-heading {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
@@ -658,16 +658,19 @@ img {
   color: #212121;
   margin-bottom: 50px;
 }
-.section-d .section-d-text {
+
+.section-d-text {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   gap: 30px;
 }
-.section-d .section-d-text .section-d-li {
+
+.section-d-li {
   width: calc((100% - 90px) / 4);
 }
-.section-d .section-d-text .section-d-li .section-d-seb-div {
+
+.section-d-seb-div {
   padding-top: 30px;
   padding-bottom: 30px;
   padding-left: 10px;
@@ -678,7 +681,8 @@ img {
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
-.section-d .section-d-text .section-d-li .section-d-seb-div .section-d-subtitle {
+
+.section-d-subtitle {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.18;
@@ -686,14 +690,16 @@ img {
   color: #212121;
   margin-bottom: 10px;
 }
-.section-d .section-d-text .section-d-li .section-d-seb-div .section-d-desc {
+
+.section-d-desc {
   font-size: 16px;
   line-height: 1.18;
   letter-spacing: 0.03em;
   color: var(--main-color-text);
   margin-bottom: 16px;
 }
-.section-d .section-d-text .section-d-li .section-d-seb-div .section-d-soc {
+
+.section-d-soc {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -727,7 +733,8 @@ img {
 .section-d-soc-link:hover .section-d-soc-icon, .section-d-soc-link:focus .section-d-soc-icon {
   fill: #FFFFFF;
 }
-.section-d-soc-link:hover .section-d-soc-icon .section-d-soc-icon, .section-d-soc-link:focus .section-d-soc-icon .section-d-soc-icon {
+
+.section-d-soc-icon {
   fill: #AFB1B8;
   -webkit-transition-duration: 250ms;
           transition-duration: 250ms;
@@ -937,13 +944,15 @@ img {
   letter-spacing: 0.03em;
   color: #FFFFFF;
 }
-.footer-address .footer-text {
+
+.footer-text {
   margin-top: 9px;
 }
-.footer-address .footer-text .a-mail-a {
+.footer-text .a-mail-a {
   margin-bottom: 9px;
 }
-.footer-address .footer-text .a-mail-a .mail {
+
+.mail {
   font-family: "Roboto";
   font-weight: 400;
   font-style: normal;
@@ -952,7 +961,8 @@ img {
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
 }
-.footer-address .footer-text .a-mail-a .tel {
+
+.tel {
   font-family: "Roboto";
   font-weight: 400;
   font-style: normal;
