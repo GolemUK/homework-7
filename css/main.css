@@ -206,11 +206,11 @@ img {
   margin-top: 10px;
 }
 
-.modal-input:focus + .input-svg {
+.window__input:focus + .window__svg {
   fill: currentColor;
 }
 
-.modal-input:focus {
+.window__input:focus {
   border: 1px solid #2196F3;
 }
 
@@ -522,6 +522,7 @@ img {
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
+  letter-spacing: 0.06em;
   text-transform: uppercase;
   color: #FFFFFF;
   text-align: center;

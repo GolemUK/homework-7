@@ -129,11 +129,11 @@
     margin-top: 10px;
 }
 
-.modal-input:focus + .input-svg {
+.window__input:focus + .window__svg {
     fill: currentColor;
 }
 
-.modal-input:focus {
+.window__input:focus {
     border: 1px solid #2196F3;
 }
 
